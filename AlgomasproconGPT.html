@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Obras Yesid — Palocabildo</title>
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="PROconGPT.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <span class="brand-name">Obras Yesid</span>
+        <small class="brand-sub">Palocabildo · Tolima</small>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Menú principal">
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Construcción responsable y detalles que perduran</h1>
+          <p class="lead">Proyectos residenciales y obras civiles en Palocabildo, Tolima. Calidad, seguridad y cumplimiento.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contacto">Contáctanos</a>
+            <a class="btn btn-ghost" href="#galeria">Ver trabajos</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- Puedes reemplazar por una imagen real -->
+          <img src="imag/hero-placeholder.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section container">
+      <h2 class="section-title">Servicios</h2>
+      <p class="section-subtitle">Trabajos de construcción, remodelaciones y mantenimiento.</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Construcción</h3>
+          <p>Obras nuevas con bases técnicas y control en cada etapa.</p>
+        </article>
+
+        <article class="card">
+          <h3>Remodelación</h3>
+          <p>Renovamos espacios para darles mayor valor y funcionalidad.</p>
+        </article>
+
+        <article class="card">
+          <h3>Mantenimiento</h3>
+          <p>Soluciones rápidas y efectivas para conservar tus instalaciones.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="section container">
+      <h2 class="section-title">Galería</h2>
+      <p class="section-subtitle">Algunos de nuestros proyectos recientes.</p>
+
+      <div class="gallery">
+        <!-- Reemplaza las src por tus imágenes reales -->
+        <button class="gallery-item" data-src="imag/p1.jpg" aria-label="Abrir imagen 1">
+          <img src="imag/p1-thumb.jpg" alt="Proyecto 1">
+        </button>
+        <button class="gallery-item" data-src="imag/p2.jpg" aria-label="Abrir imagen 2">
+          <img src="imag/p2-thumb.jpg" alt="Proyecto 2">
+        </button>
+        <button class="gallery-item" data-src="imag/p3.jpg" aria-label="Abrir imagen 3">
+          <img src="imag/p3-thumb.jpg" alt="Proyecto 3">
+        </button>
+        <button class="gallery-item" data-src="imag/p4.jpg" aria-label="Abrir imagen 4">
+          <img src="imag/p4-thumb.jpg" alt="Proyecto 4">
+        </button>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX (modal) -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Visor de imagen">
+      <div class="lightbox-inner">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+        <div class="lightbox-actions">
+          <a id="lightbox-link" class="btn btn-ghost" target="_blank" rel="noopener">Abrir original</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- UBICACIÓN -->
+    <section id="ubicacion" class="section container">
+      <h2 class="section-title">Ubicación</h2>
+      <p class="section-subtitle">Estamos en Palocabildo, Tolima. Ven y conócenos.</p>
+
+      <div class="ubicacion">
+        <img src="imag/Palo.png" alt="Mapa ubicación" class="icon" width="64" height="64">
+        <div>
+          <p>Palocabildo, Tolima</p>
+          <a class="link" href="https://maps.app.goo.gl/bZijph3PNzaVeLHU8" target="_blank" rel="noopener">Ver en Google Maps</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Contáctame</h4>
+        <p class="contact-item">
+          <img src="imag/What.png" alt="" class="icon-small"> 
+          <a href="https://wa.me/573219906986" target="_blank" rel="noopener">321 990 6986</a>
+        </p>
+
+        <p class="contact-item">
+          <img src="imag/face.png" alt="" class="icon-small"> 
+          <a href="https://www.facebook.com/eliecid.rodriguez" target="_blank" rel="noopener">Facebook</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Horario</h4>
+        <p>Lun - Vie: 7:00 - 17:00</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Dirección</h4>
+        <p>Palocabildo, Tolima</p>
+      </div>
+    </div>
+
+    <div class="site-credit container">
+      <small>© <span id="year"></span> Obras Yesid — Hecho con cuidado.</small>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
